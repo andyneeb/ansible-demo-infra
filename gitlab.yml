@@ -1,0 +1,10 @@
+---
+- name: Install Gitlab
+  hosts: all
+  become: true
+
+  vars_files:
+    - vars/gitlab.yml
+
+  roles:
+    - { role: geerlingguy.gitlab }
