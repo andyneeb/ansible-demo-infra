@@ -3,8 +3,8 @@
   hosts: all
   become: true
 
-  vars_files:
-    - vars/gitlab.yml
+  vars:
+    - gitlab_external_url: "https://gitlab.andyneeb.com/"
 
   roles:
     - { role: geerlingguy.gitlab }

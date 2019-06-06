@@ -1,0 +1,11 @@
+---
+- name: Install Jenkins CI
+  hosts: jenkins
+  become: true
+
+  vars:
+    jenkins_hostname: jenkins.andyneeb.com
+
+    roles:
+    - role: geerlingguy.java
+    - role: geerlingguy.jenkins
