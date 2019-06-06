@@ -3,7 +3,7 @@
     src: templates/tower-cli.repo.j2
     dest: /etc/yum.repos.d/tower-cli.repo
     owner: root
-    group: rooti
+    group: root
 
 - name: Install Ansible Tower CLI packages
   yum:
