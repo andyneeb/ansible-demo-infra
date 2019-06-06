@@ -1,0 +1,136 @@
+{
+  "name": "", 
+  "description": "", 
+  "spec": [
+    {
+      "question_name": "Instance Name", 
+      "question_description": "", 
+      "required": true, 
+      "type": "text", 
+      "variable": "instance_name", 
+      "min": 0, 
+      "max": 1024, 
+      "default": "", 
+      "choices": "", 
+      "new_question": true
+    }, 
+    {
+      "question_name": "Instance Image", 
+      "question_description": "", 
+      "required": true, 
+      "type": "text", 
+      "variable": "instance_image", 
+      "min": 0, 
+      "max": 1024, 
+      "default": "rhel76", 
+      "choices": "", 
+      "new_question": true
+    }, 
+    {
+      "question_name": "Instance Flavor", 
+      "question_description": "", 
+      "required": true, 
+      "type": "text", 
+      "variable": "instance_flavor", 
+      "min": 0, 
+      "max": 1024, 
+      "default": "m1.xsmall", 
+      "choices": "", 
+      "new_question": true
+    }, 
+    {
+      "question_name": "Instance SSH Key Name", 
+      "question_description": "", 
+      "required": true, 
+      "type": "text", 
+      "variable": "instance_ssh_key_name", 
+      "min": 0, 
+      "max": 1024, 
+      "default": "admin", 
+      "choices": "", 
+      "new_question": true
+    }, 
+    {
+      "question_name": "Instance Security Group", 
+      "question_description": "", 
+      "required": true, 
+      "type": "text", 
+      "variable": "instance_security_group", 
+      "min": 0, 
+      "max": 1024, 
+      "default": "base", 
+      "choices": "", 
+      "new_question": true
+    }, 
+    {
+      "question_name": "Instance Network", 
+      "question_description": "", 
+      "required": true, 
+      "type": "text", 
+      "variable": "instance_network", 
+      "min": 0, 
+      "max": 1024, 
+      "default": "admin", 
+      "choices": "", 
+      "new_question": true
+    }, 
+    {
+      "question_name": "OpenStack User", 
+      "question_description": "", 
+      "required": true, 
+      "type": "text", 
+      "variable": "openstack_user", 
+      "min": 0, 
+      "max": 1024, 
+      "default": "admin", 
+      "choices": "", 
+      "new_question": true
+    }, 
+    {
+      "question_name": "OpenStack Password", 
+      "question_description": "", 
+      "required": true, 
+      "type": "password", 
+      "variable": "openstack_passwd", 
+      "min": 0, 
+      "max": 32, 
+      "default": "", 
+      "choices": ""
+    }, 
+    {
+      "question_name": "OpenStack URL", 
+      "question_description": "", 
+      "required": true, 
+      "type": "text", 
+      "variable": "openstack_auth_url", 
+      "min": 0, 
+      "max": 1024, 
+      "default": "http://95.216.101.219:5000/v3", 
+      "choices": "", 
+      "new_question": true
+    }, 
+    {
+      "question_name": "OpenStack Project", 
+      "question_description": "", 
+      "required": true, 
+      "type": "text", 
+      "variable": "openstack_project", 
+      "min": 0, 
+      "max": 1024, 
+      "default": "admin", 
+      "choices": "", 
+      "new_question": true
+    }, 
+    {
+      "question_name": "SSH User", 
+      "question_description": "", 
+      "required": true, 
+      "type": "text", 
+      "variable": "ssh_user", 
+      "min": 0, 
+      "max": 1024, 
+      "default": "cloud-user", 
+      "choices": ""
+    }
+  ]
+}

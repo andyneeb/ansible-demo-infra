@@ -1,0 +1,64 @@
+{
+  "name": "", 
+  "description": "", 
+  "spec": [
+    {
+      "question_name": "Target", 
+      "question_description": "", 
+      "required": true, 
+      "type": "text", 
+      "variable": "target", 
+      "min": 0, 
+      "max": 1024, 
+      "default": "towerdb", 
+      "choices": "", 
+      "new_question": true
+    }, 
+    {
+      "question_name": "SSH User", 
+      "question_description": "", 
+      "required": true, 
+      "type": "text", 
+      "variable": "ssh_user", 
+      "min": 0, 
+      "max": 1024, 
+      "default": "cloud-user", 
+      "choices": "", 
+      "new_question": true
+    }, 
+    {
+      "question_name": "OpenStack User", 
+      "question_description": "", 
+      "required": true, 
+      "type": "text", 
+      "variable": "openstack_user", 
+      "min": 0, 
+      "max": 1024, 
+      "default": "admin", 
+      "choices": "", 
+      "new_question": true
+    }, 
+    {
+      "question_name": "OpenStack Password", 
+      "question_description": "", 
+      "required": true, 
+      "type": "password", 
+      "variable": "openstack_passwd", 
+      "min": 0, 
+      "max": 32, 
+      "default": "", 
+      "choices": ""
+    }, 
+    {
+      "question_name": "OpenStack Auth URL", 
+      "question_description": "", 
+      "required": true, 
+      "type": "text", 
+      "variable": "openstack_auth_url", 
+      "min": 0, 
+      "max": 1024, 
+      "default": "http://95.216.101.219:5000/v3", 
+      "choices": ""
+    }
+  ]
+}

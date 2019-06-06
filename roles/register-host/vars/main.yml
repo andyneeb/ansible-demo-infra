@@ -1,0 +1,7 @@
+rhn_username: <rhn account>
+rhn_password: <rhn password>
+rhn_pool: <pool id>
+repos:
+  - rhel-7-server-rpms
+  - rhel-7-server-extras-rpms
+

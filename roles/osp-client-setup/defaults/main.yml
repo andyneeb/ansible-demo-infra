@@ -1,0 +1,2 @@
+# openstack_version - openstack version 12, 13, etc (based on Red Hat OpenStack)
+openstack_version: 13

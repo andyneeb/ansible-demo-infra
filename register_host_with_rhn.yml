@@ -1,0 +1,9 @@
+---
+- name: Register Hosts
+  hosts: all
+  become: true
+
+  tasks:
+    - import_role:
+        name: register-host
+

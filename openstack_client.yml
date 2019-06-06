@@ -1,0 +1,10 @@
+---
+- name: Setup OpenStack Client on RHEL
+  hosts: '{{ target }}'
+  become: true
+  gather_facts: no
+  remote_user: "{{ ssh_user }}"
+
+  tasks:
+  - import_role:
+      name: osp-client-setup

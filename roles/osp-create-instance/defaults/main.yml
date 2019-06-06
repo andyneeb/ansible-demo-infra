@@ -1,0 +1,14 @@
+# instance_name - name of instance to create
+# instance_security_group - name of security group to use for instance
+# instance_flavor - flavor for the instance
+# instance_image - image to use for instance
+# instance_ssh_key_name - key to use for ssh access
+# instance_network - internal network to use for instance
+# openstack_project - Name of the openstack project where instance will deploy
+
+instance_name: rhel123
+instance_security_group: base
+instance_flavor: m2.tiny
+instance_image: rhel75
+instance_ssh_key_name: admin
+openstack_project: test
