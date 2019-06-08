@@ -2,8 +2,6 @@
 - name: Deploy Instance
   hosts: localhost
   become: false
-  gather_facts: false
-  remote_user: "{{ ssh_user }}"
   environment:
     OS_USERNAME: "{{ openstack_user }}"
     OS_PASSWORD: "{{ openstack_passwd }}"
