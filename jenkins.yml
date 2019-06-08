@@ -8,7 +8,7 @@
     - jenkins_http_port: 80
     - jenkins_url_prefix: /jenkins
     - jenkins_admin_username: admin
-    - jenkins_admin_password: Mr!Spock#1
+    - jenkins_admin_password: admin
 
   roles:
     - role: geerlingguy.java
