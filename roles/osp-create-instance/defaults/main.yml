@@ -9,6 +9,7 @@
 instance_name: rhel123
 instance_security_group: base
 instance_flavor: m2.tiny
-instance_image: rhel75
+instance_image: rhel76
 instance_ssh_key_name: admin
-openstack_project: test
+instance_network: admin
+openstack_project: admin
