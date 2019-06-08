@@ -4,7 +4,11 @@
   become: true
 
   vars:
-    - jenkins_hostname: jenkins.andyneeb.com
+    - jenkins_hostname: toolchain.andyneeb.com
+    - jenkins_http_port: 80
+    - jenkins_url_prefix: /jenkins
+    - jenkins_admin_username: admin
+    - jenkins_admin_password: Mr!Spock#1
 
   roles:
     - role: geerlingguy.java
