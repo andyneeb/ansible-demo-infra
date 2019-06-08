@@ -1,9 +1,6 @@
 ---
 - name: Setup OpenStack Client on RHEL
-  hosts: '{{ target }}'
-  become: true
-  gather_facts: no
-  remote_user: "{{ ssh_user }}"
+  hosts: all
 
   tasks:
   - import_role:
