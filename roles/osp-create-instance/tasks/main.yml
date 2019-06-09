@@ -3,16 +3,6 @@
     instance_network: "{{ openstack_project }}"
   when: instance_network is undefined or instance_network == ""
 
-#- name: Set instance ssh key
-#  set_fact:
-#    instance_ssh_key_name: "{{ openstack_project }}"
-#  when: instance_ssh_key_name is undefined
-
-#- name: Set instance security group
-#  set_fact:
-#     instance_security_group: base
-#  when:  instance_security_group is undefined
-
 - name: Check if instance exists
   shell: openstack server show {{ instance_name }}
   register: instance_output
