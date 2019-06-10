@@ -1,6 +1,6 @@
 # from galaxy
-- src: geerlingguy.gitlab
 - src: geerlingguy.java
 - src: geerlingguy.jenkins
 - src: geerlingguy.mysql
 - src: bbaassssiiee.artifactory
+- src: tecris.maven

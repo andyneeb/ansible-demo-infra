@@ -1,0 +1,12 @@
+---
+- name: Install Maven
+  hosts: all
+  become: true
+
+  vars:
+    - maven_major: 3
+    - maven_version: 3.6.1
+    - maven_home_parent_directory: /opt
+
+  roles:
+    - role: tecris.maven
