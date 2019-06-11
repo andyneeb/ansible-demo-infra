@@ -3,5 +3,8 @@
   hosts: all
   become: true
 
+  vars:
+    - git_packages: git
+
   roles:
     - role: geerlingguy.git
