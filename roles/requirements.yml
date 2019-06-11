@@ -2,5 +2,6 @@
 - src: geerlingguy.java
 - src: geerlingguy.jenkins
 - src: geerlingguy.mysql
+- src: geerlingguy.git
 - src: bbaassssiiee.artifactory
 - src: tecris.maven
