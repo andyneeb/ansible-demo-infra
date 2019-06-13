@@ -1,7 +1,11 @@
-- name: "Create user account"
+- name: Create user account
   user:
     name: "{{ instance_user }}"
 
+- name: Set Password
+  command: "echo {{ instance_password }} | passwd --stdin {{ instance_user }}"
+  no_log: True
+    
 - name: Allow managed user sudo
   lineinfile:
     dest: "/etc/sudoers.d/{{ instance_user }}"
