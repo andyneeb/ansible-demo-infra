@@ -1,8 +1,0 @@
----
-- name: Add local user
-  hosts: all
-  become: true
-
-  tasks:
-  - import_role:
-      name: add-user
