@@ -1,0 +1,8 @@
+---
+- name: Rocket.Chat Server
+  hosts: all
+  become: true
+
+
+  roles:
+    - role: RocketChat.Server
