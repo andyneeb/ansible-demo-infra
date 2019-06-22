@@ -1,5 +1,5 @@
 - name: Check if already member
-  shell: neutron lbaas-member-list {{ lb_pool_name }} | grep $(openstack server list --name {{ instance_name }} -f value -c Networks | grep -oP {%raw%}'{{ instance_network }}=\K.*'{%endraw%})
+  shell: neutron lbaas-member-list {{ lb_pool_name }} | grep $(openstack server list --name {{ instance_name }} -f value -c Networks | grep -oE '{{ instance_network }}=\K.*')
   register: lb_output
   ignore_errors: true
 
