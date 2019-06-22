@@ -1,0 +1,18 @@
+---
+- name: Add Instance to existing LB Pool
+  hosts: localhost
+  become: false
+  environment:
+    OS_USERNAME: "{{ openstack_user }}"
+    OS_PASSWORD: "{{ openstack_passwd }}"
+    OS_AUTH_URL: "{{ openstack_auth_url }}"
+    OS_PROJECT_NAME: "{{ openstack_project }}"
+    OS_USER_DOMAIN_NAME: Default
+    OS_PROJECT_DOMAIN_NAME: Default
+    OS_IDENTITY_API_VERSION: 3
+    OS_INTERFACE: public
+
+  tasks:
+  - import_role:
+      name: osp-add-instance-lb
+    tags: ['deploy']
