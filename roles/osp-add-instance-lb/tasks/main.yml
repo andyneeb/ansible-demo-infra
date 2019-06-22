@@ -10,4 +10,4 @@
 
 - name: Add Instance to LoadBalancer
   shell: neutron lbaas-member-create --name {{ instance_name }} --subnet {{ instance_network }} --address $(openstack server list --name {{ instance_name }} -f value -c Networks | grep -oP 'admin=\K.*') --protocol-port {{ instance_port }} {{ lb_pool_name }}
-  when: instance_output.rc != 0
+  when: lb_output.rc != 0
