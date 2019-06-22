@@ -1,0 +1,11 @@
+# instance_name - name of instance to add
+# instance_subnet - The network which contains the IP address of the member.
+# instance_port: The port on which the member listens for traffic. Must be a number from 1 to 65535.
+# lb_pool_name: Name of LB Pool
+# openstack_project - Name of the openstack project where instance will deploy
+
+instance_name: rhel123
+instance_subnet: admin_subnet
+instance_port: 8080
+lb_pool_name: demoapp
+openstack_project: admin
