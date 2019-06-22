@@ -1,6 +1,6 @@
 ---
 - name: Register Hosts
-  hosts: all
+  hosts: "{{ instance_name }}"
   become: true
 
   tasks:
