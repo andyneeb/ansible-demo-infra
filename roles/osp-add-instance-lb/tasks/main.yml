@@ -1,13 +1,8 @@
-- name: Set instance network
-  set_fact:
-    instance_network: "{{ openstack_project }}"
-  when: instance_network is undefined or instance_network == ""
-
 - name: Check if already member
   shell: neutron lbaas-member-list {{ lb_pool_name }} | grep $(openstack server list --name {{ instance_name }} -f value -c Networks | grep -oP 'admin=\K.*')
   register: lb_output
   ignore_errors: true
 
 - name: Add Instance to LoadBalancer
-  shell: neutron lbaas-member-create --name {{ instance_name }} --subnet {{ instance_network }} --address $(openstack server list --name {{ instance_name }} -f value -c Networks | grep -oP 'admin=\K.*') --protocol-port {{ instance_port }} {{ lb_pool_name }}
+  shell: neutron lbaas-member-create --name {{ instance_name }} --subnet {{ instance_subnet }} --address $(openstack server list --name {{ instance_name }} -f value -c Networks | grep -oP 'admin=\K.*') --protocol-port {{ instance_port }} {{ lb_pool_name }}
   when: lb_output.rc != 0
