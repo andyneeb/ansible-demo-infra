@@ -3,9 +3,6 @@
   register: lb_output
   ignore_errors: true
 
-
-openstack server list --project prod --name prod02 -f value -c Networks | grep -oP 'prod=\K.*'
-
 - name: Add Instance to LoadBalancer
   shell: neutron lbaas-member-create --name {{ instance_name }} --subnet {{ instance_subnet }} --address $(openstack server list --name {{ instance_name }} -f value -c Networks | grep -oP '{{ '{{' }} instance_network {{ '}}' }}=\K.*') --protocol-port {{ instance_port }} {{ lb_pool_name }}
   when: lb_output.rc != 0
